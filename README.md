@@ -28,10 +28,10 @@ class Hoge
   extend Naniyatsu
 end
 
-class Fuga
+class Fuga < Hoge
 end
 
-class Piyo 
+class Piyo < Fuga
 end
 
 Hoge.new.hoge? # => true
