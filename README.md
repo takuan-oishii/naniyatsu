@@ -1,8 +1,7 @@
 # Naniyatsu
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/naniyatsu`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+We are stupid.  
+We can't remember `instance_of?`, `kind_of?` and `is_a?` method.  
 
 ## Installation
 
@@ -22,7 +21,31 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'naniyatsu'
+
+class Hoge
+  extend Naniyatsu
+end
+
+class Fuga
+end
+
+class Piyo 
+end
+
+Hoge.new.hoge? # => true
+Fuga.new.hoge? # => true
+Piyo.new.hoge? # => true
+
+Hoge.new.fuga? # => false
+Fuga.new.fuga? # => true
+Piyo.new.fuga? # => true
+
+Hoge.new.piyo? # => false
+Fuga.new.piyo? # => false
+Piyo.new.piyo? # => true
+```
 
 ## Development
 
@@ -32,7 +55,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/naniyatsu. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/takuan-oishii/naniyatsu. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +63,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Naniyatsu project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/naniyatsu/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Naniyatsu project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/takuan-oishii/naniyatsu/blob/master/CODE_OF_CONDUCT.md).
